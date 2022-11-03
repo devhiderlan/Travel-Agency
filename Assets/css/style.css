@@ -26,6 +26,10 @@ html::-webkit-scrollbar-thumb {
   background: #29d9d5;
 }
 
+section {
+  padding: 3rem 9%;
+}
+
 body {
   background: #111;
   overflow-x: hidden;
@@ -81,6 +85,7 @@ body {
 .logo i {
   color: #29d9d5;
   padding: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 #menu-btn {
@@ -90,9 +95,49 @@ body {
   display: none;
 }
 
+.home {
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 90%;
+  border-radius: 1rem;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/home-bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.content {
+  text-align: center;
+}
+.content span {
+  font-weight: bolder;
+  color: transparent;
+  -webkit-text-stroke: 0.1rem #fff;
+  font-size: 4vw;
+  display: block;
+}
+.content h3 {
+  font-size: 6vw;
+  color: #fff;
+}
+.content p {
+  max-width: 60rem;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
+  }
+  section {
+    padding: 3rem 2rem;
   }
   .header {
     padding: 1.5rem 2rem;
@@ -117,6 +162,15 @@ body {
     margin: 2rem;
     font-size: 2rem;
     display: block;
+  }
+  .home {
+    margin-top: 10rem;
+  }
+  .home .content span {
+    font-size: 8vw;
+  }
+  .home .content h3 {
+    font-size: 9vw;
   }
 }
 @media (max-width: 450px) {
