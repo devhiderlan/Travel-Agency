@@ -285,7 +285,6 @@ section {
 }
 
 .destination .box-container {
-
   @include grid(27rem);
 
   .box {
@@ -341,6 +340,8 @@ section {
   }
 }
 
+//Services section
+
 .services .box-container {
   @include grid(32rem);
 
@@ -349,12 +350,11 @@ section {
     border-radius: 1rem;
     padding: 3rem 2rem;
     text-align: center;
-    border: .2rem solid $black;
+    border: 0.2rem solid $black;
 
     &:hover {
       border: $border;
     }
-
 
     i {
       font-size: 4rem;
@@ -373,9 +373,46 @@ section {
       color: $light-color;
       line-height: 2;
     }
+  }
+}
+
+// Gallery Section
+
+.gallery .box-container {
+  columns: 3 25rem;
+  column-gap: 1.5rem;
+
+  .box {
+    margin-bottom: 1rem;
+    break-inside: avoid;
+
+    img {
+      width: 100%;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    span {
+      font-size: 1.4rem;
+      color: $light-color;
+    }
+
+    h3 {
+      margin-top: .5rem;
+      font-size: 2rem;
+      color: $white;
+    }
 
   }
 }
+
+
+
+
+
+
+
+
 
 
 
