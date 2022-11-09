@@ -476,8 +476,42 @@ section {
    }
 }
 
+// Banner section
+
+.banner {
+   background: linear-gradient($black-bg, $black-bg),
+      url(../images/banner-bg.jpg) no-repeat;
+   background-position: center;
+   background-size: cover;
+   padding: 5rem 2rem;
+   background-attachment: fixed;
+   text-align: center;
+
+   .content-banner {
+      span {
+         font-size: 2rem;
+         color: $blue;
+      }
+
+      h3 {
+         font-size: 4rem;
+         color: $white;
+         margin-top: 1rem;
+      }
+
+      p {
+         max-width: 60rem;
+         margin: 1rem auto;
+         font-size: 1.4rem;
+         color: $light-color;
+         line-height: 2;
+      }
+   }
+}
+
+//Footer section
+
 .footer {
-   
    .box-container {
       @include grid(25rem);
 
@@ -579,15 +613,6 @@ section {
    }
 }
 
-
-
-
-
-
-
-
-
-
 // media Queries
 
 @media (max-width: 991px) {
@@ -652,5 +677,9 @@ section {
 
    .about .content-about h3 {
       font-size: 3.5rem;
+   }
+
+   .banner .content-banner h3 {
+      font-size: 3rem;
    }
 }
