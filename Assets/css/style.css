@@ -113,7 +113,7 @@ section {
   margin-top: 9rem;
   width: 90%;
   border-radius: 1rem;
-  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/home-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/home-bg.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -335,6 +335,70 @@ section {
   color: #fff;
 }
 
+.rewiew {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.rewiew .content-rewiew {
+  flex: 1 1 42rem;
+}
+.rewiew .content-rewiew span {
+  font-size: 2rem;
+  color: #29d9d5;
+}
+.rewiew .content-rewiew h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+.rewiew .content-rewiew p {
+  font-size: 1.4rem;
+  color: #aaa;
+  padding: 1rem 0;
+  line-height: 2;
+}
+.rewiew .box-container {
+  flex: 1 1 42rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.rewiew .box-container .box {
+  flex: 1 1 20rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  background: #222;
+  border: 0.2rem solid black;
+}
+.rewiew .box-container .box:hover {
+  border: 0.2rem solid #29d9d5;
+}
+.rewiew .box-container .box p {
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+  line-height: 2;
+  color: #aaa;
+}
+.rewiew .box-container .box .user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.rewiew .box-container .box .user img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50px;
+}
+.rewiew .box-container .box .user h3 {
+  font-size: 1.7rem;
+  color: #fff;
+}
+.rewiew .box-container .box .user span {
+  color: #aaa;
+  font-size: 1.5rem;
+}
+
 .blogs .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
@@ -393,7 +457,7 @@ section {
 }
 
 .banner {
-  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/banner-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/banner-bg.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   padding: 5rem 2rem;
@@ -491,6 +555,7 @@ section {
 }
 
 .credit {
+  bottom: 0;
   background: #222;
   text-align: center;
   font-size: 1.5rem;
